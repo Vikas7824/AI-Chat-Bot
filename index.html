@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ai chat bot AI Assistant</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        @keyframes float {
+
+            0% { transform: translateY(0px); }
+
+            50% { transform: translateY(-15px); }
+
+            100% { transform: translateY(0px); }
+
+        }
+
+
+
+        .ai-float {
+
+            animation: float 3s ease-in-out infinite;
+
+        }
+
+
+
+        .message-animation {
+
+            animation: slideIn 0.3s ease-out;
+
+        }
+
+
+
+        @keyframes slideIn {
+
+            from { opacity: 0; transform: translateY(20px); }
+
+            to { opacity: 1; transform: translateY(0); }
+
+        }
+
+
+
+        .scrollbar-custom::-webkit-scrollbar {
+
+            width: 6px;
+
+        }
+
+        .scrollbar-custom::-webkit-scrollbar-track {
+
+            background: #1a1a1a;
+
+        }
+
+        .scrollbar-custom::-webkit-scrollbar-thumb {
+
+            background: #dc2626;
+
+            border-radius: 3px;
+
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-black text-white font-['Inter'] min-h-screen">
+
+
+
+    <!-- Header Section -->
+
+    <header class="bg-black/90 border-b border-red-600/30 fixed w-full top-0 z-50">
+
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+
+            <div class="flex items-center space-x-3">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" 
+
+                     alt="AI Logo" 
+
+                     class="h-10 w-10 ai-float">
+
+                <h1 class="text-2xl font-bold text-red-500">Ai chat bot AI</h1>
+
+            </div>
+
+            <div class="flex space-x-4 text-gray-300">
+
+                <a href="https://tasktrivialaggregated.com/rrtu0r67d?key=f2cbf38012a28d3572da271768156235" class="hover:text-red-500 transition-colors">Home</a>
+
+                <a href="https://tasktrivialaggregated.com/rrtu0r67d?key=f2cbf38012a28d3572da271768156235" class="hover:text-red-500 transition-colors">About</a>
+
+
+                <a href="https://tasktrivialaggregated.com/rrtu0r67d?key=f2cbf38012a28d3572da271768156235" class="hover:text-red-500 transition-colors">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Main Chat Interface -->
+
+    <main class="container mx-auto px-4 pt-20 pb-8">
+
+<center><script type="text/javascript">
+	atOptions = {
+		'key' : '3a7026832bc875021a233dc1a6511c54',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//tasktrivialaggregated.com/3a7026832bc875021a233dc1a6511c54/invoke.js"></script></center>
+
+        <div class="bg-gray-900/80 rounded-xl border border-red-600/30 shadow-2xl">
+
+            
+
+            <!-- Chat Messages Container -->
+
+            <div id="chat-window" class="h-[60vh] p-4 overflow-y-auto scrollbar-custom space-y-4">
+
+                <!-- Initial Bot Message -->
+
+                <div class="flex items-start space-x-3 message-animation">
+
+                    <div class="h-10 w-10 flex-shrink-0 rounded-full bg-red-600 flex items-center justify-center">
+
+
+                        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" 
+
+                             alt="AI" 
+
+                             class="h-6 w-6">
+
+                    </div>
+
+                    <div class="bg-gray-800 p-4 rounded-lg max-w-[80%] border border-red-600/30">
+
+                        <p>Hello! I'm Ai chat bot AI. How can I assist you today? 😊</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Input Area -->
+
+            <div class="p-4 border-t border-red-600/30">
+
+                <div class="flex gap-3">
+
+                    <textarea id="message-input"
+
+                              class="flex-1 bg-gray-800 text-white placeholder-gray-400 rounded-lg p-3 border border-red-600/30 focus:outline-none focus:ring-2 focus:ring-red-500 resize-none scrollbar-custom"
+
+                              rows="2"
+
+                              placeholder="Type your message here..."></textarea>
+
+                    <button id="send-button" 
+
+                            class="bg-red-600 hover:bg-red-700 text-white px-5 py-3 rounded-lg transition-all flex items-center justify-center">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+
+                        </svg>
+
+                    </button>
+
+                </div>
+
+                <p class="text-sm text-gray-400 mt-2 text-center">Powered by Gemini AI - Responses may vary</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+<center><script type="text/javascript">
+	atOptions = {
+		'key' : '3a7026832bc875021a233dc1a6511c54',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//tasktrivialaggregated.com/3a7026832bc875021a233dc1a6511c54/invoke.js"></script></center>
+
+
+
+
+
+    <!-- Footer Section -->
+
+    <footer class="bg-black/90 border-t border-red-600/30 mt-8">
+
+        <div class="container mx-auto px-4 py-6">
+
+            <div class="text-center text-gray-400">
+
+                <p>© 2024 Ai chat bot AI. All rights reserved. | <a href="#" class="hover:text-red-500">Privacy Policy</a> | <a href="#" class="hover:text-red-500">Terms of Service</a></p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript Code -->
+
+    <script>
+
+        // API Configuration (REPLACE WITH YOUR API KEY)
+
+        const API_KEY = 'AIzaSyAG-8uV4p8EIa17CzWTGE--32WHa0GSUyc'; // 🔴 Replace this with your actual API key
+
+        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`;
+
+
+
+        // DOM Elements
+
+        const chatWindow = document.getElementById('chat-window');
+
+        const messageInput = document.getElementById('message-input');
+
+
+        const sendButton = document.getElementById('send-button');
+
+
+
+        // Chat History
+
+        let chatHistory = [
+
+            {
+
+                role: "user",
+
+                parts: [{ text: "You are a helpful AI assistant. Keep responses concise and professional." }]
+
+            },
+
+            {
+
+                role: "model",
+
+                parts: [{ text: "Understood. I'm ready to assist you professionally." }]
+
+            }
+
+        ];
+
+
+
+        // Event Listeners
+
+        sendButton.addEventListener('click', sendMessage);
+
+        messageInput.addEventListener('keypress', (e) => {
+
+            if (e.key === 'Enter' && !e.shiftKey) {
+
+                e.preventDefault();
+
+                sendMessage();
+
+            }
+
+        });
+
+
+
+        // Auto-resize textarea
+
+        messageInput.addEventListener('input', () => {
+
+            messageInput.style.height = 'auto';
+
+            messageInput.style.height = `${messageInput.scrollHeight}px`;
+
+        });
+
+
+
+        // Main Function to Handle Messages
+
+        async function sendMessage() {
+
+            const userMessage = messageInput.value.trim();
+
+            if (!userMessage) return;
+
+
+
+            // Add user message to UI
+
+            addMessageToChat(userMessage, 'user');
+
+            messageInput.value = '';
+
+            messageInput.style.height = 'auto';
+
+
+
+            try {
+
+                // Add to chat history
+
+                chatHistory.push({ role: "user", parts: [{ text: userMessage }] });
+
+
+
+                // API Request
+
+                const response = await fetch(API_URL, {
+
+                    method: 'POST',
+
+                    headers: { 'Content-Type': 'application/json' },
+
+                    body: JSON.stringify({
+
+                        contents: chatHistory.slice(-6),
+
+                        generationConfig: {
+
+                            temperature: 0.7,
+
+                            maxOutputTokens: 1000
+
+                        }
+
+                    })
+
+                });
+
+
+
+                const data = await response.json();
+
+                
+
+                if (data.candidates?.[0]?.content?.parts?.[0]?.text) {
+
+                    const botResponse = data.candidates[0].content.parts[0].text;
+
+                    addMessageToChat(botResponse, 'bot');
+
+                    chatHistory.push({ role: "model", parts: [{ text: botResponse }] });
+
+                } else {
+
+                    throw new Error('Invalid API response');
+
+                }
+
+
+
+            } catch (error) {
+
+                console.error('Error:', error);
+
+                addMessageToChat('Sorry, there was an error processing your request.', 'error');
+
+            }
+
+        }
+
+
+
+        // Function to Add Messages
+
+        function addMessageToChat(text, type) {
+
+            const messageDiv = document.createElement('div');
+
+            messageDiv.className = `flex items-start space-x-3 message-animation ${type === 'user' ? 'flex-row-reverse' : ''}`;
+
+
+
+            // Icon
+
+            const icon = document.createElement('div');
+
+            icon.className = `h-10 w-10 flex-shrink-0 rounded-full flex items-center justify-center ${
+
+                type === 'user' ? 'bg-blue-600' : 'bg-red-600'
+
+            }`;
+
+            icon.innerHTML = type === 'user' ? '👤' : '<img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" class="h-6 w-6" alt="AI">';
+
+
+
+            // Message Bubble
+
+            const bubble = document.createElement('div');
+
+            bubble.className = `p-4 rounded-lg max-w-[80%] border ${
+
+                type === 'user' 
+
+                    ? 'bg-blue-800 border-blue-600/30' 
+
+                    : 'bg-gray-800 border-red-600/30'
+
+            }`;
+
+            bubble.innerHTML = text.replace(/\n/g, '<br>');
+
+
+
+            messageDiv.appendChild(icon);
+
+            messageDiv.appendChild(bubble);
+
+            chatWindow.appendChild(messageDiv);
+
+
+
+            // Scroll to bottom
+
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+
+        }
+
+    </script>
+
+<script async="async" data-cfasync="false" src="//tasktrivialaggregated.com/02713bbc8b0a67f53823894357b078c3/invoke.js"></script>
+<div id="container-02713bbc8b0a67f53823894357b078c3"></div>
+
+</body>
+
+</html>
